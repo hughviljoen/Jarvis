@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jarvis AI Mobile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        .pulse { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1);box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+        }
+        #fab { touch-action: none; position: fixed; z-index: 9999; }
+    </style>
+</head>
+<body class="bg-slate-900 text-white font-sans overflow-hidden h-screen w-screen">
+
+    <!-- Mock Status Bar / Notification -->
+    <div id="status-bar" class="w-full p-4 bg-slate-800 border-b border-slate-700 flex justify-between items-center">
+        <div class="flex items-center gap-2">
